@@ -1,4 +1,4 @@
-# Stable version stack for Streamlit Cloud
+# Fully compatible stack for Streamlit Cloud
 numpy==1.26.4
 pandas==2.1.4
 scipy==1.11.4
@@ -14,7 +14,7 @@ python-dotenv
 ydata-profiling==4.6.4
 pycaret==3.3.0
 shap>=0.45.1
-numba==0.59.1
+numba>=0.56.0,<0.59.0
 
 # AI & LLM
 google-generativeai
