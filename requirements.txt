@@ -1,7 +1,9 @@
-# Streamlit Cloud Deployment - Python 3.11
+# Final stable stack for Streamlit Cloud (Python 3.11)
 numpy==1.25.2
 pandas==2.1.4
 scipy==1.11.4
+# Pinning scikit-learn to fix the "_print_elapsed_time" error
+scikit-learn==1.4.2
 
 # App Framework
 streamlit==1.30.0
