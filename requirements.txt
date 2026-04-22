@@ -1,8 +1,6 @@
-# Legacy compatibility stack for PandasAI + PyCaret
-numpy==1.23.5
-pandas==1.5.3
-scipy==1.10.1
-matplotlib==3.7.1
+# Relaxed Modern Stack for Streamlit Cloud
+numpy<2.0.0
+pandas<2.2.0
 
 # App Framework
 streamlit==1.30.0
@@ -11,16 +9,15 @@ uvicorn
 python-dotenv
 
 # ML & Analysis
-# ydata-profiling 4.6.4 is the last stable for this stack
-ydata-profiling==4.6.4
+# We remove the strict 4.6.4 pin to allow a newer version that supports Python 3.12
+ydata-profiling
 pycaret==3.3.0
-# shap must be >=0.44.0 for pycaret 3.3.0
 shap>=0.45.1
-numba>=0.56.0,<0.59.0
 
 # AI & LLM
 google-generativeai
-pandasai==2.0.0
+# We remove the 2.0.0 pin which was forcing the old Pandas 1.5.3
+pandasai
 
-# Security (pinned for stability)
-bcrypt==4.1.2
+# Security
+bcrypt
