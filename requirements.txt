@@ -1,6 +1,7 @@
-# Relaxed Modern Stack for Streamlit Cloud
-numpy<2.0.0
-pandas<2.2.0
+# Streamlit Cloud Deployment - Python 3.11
+numpy==1.25.2
+pandas==2.1.4
+scipy==1.11.4
 
 # App Framework
 streamlit==1.30.0
@@ -9,14 +10,12 @@ uvicorn
 python-dotenv
 
 # ML & Analysis
-# We remove the strict 4.6.4 pin to allow a newer version that supports Python 3.12
-ydata-profiling
+ydata-profiling==4.6.4
 pycaret==3.3.0
 shap>=0.45.1
 
 # AI & LLM
 google-generativeai
-# We remove the 2.0.0 pin which was forcing the old Pandas 1.5.3
 pandasai
 
 # Security
