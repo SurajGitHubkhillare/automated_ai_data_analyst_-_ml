@@ -1,0 +1,23 @@
+# Python junk
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Sensitive data
+.env
+
+# Local Database & Logs
+*.db
+*.log
+logs/
+
+# Generated Exports
+exports/
+cache/
+shaps/
+*.png
+*.html
+*.pkl

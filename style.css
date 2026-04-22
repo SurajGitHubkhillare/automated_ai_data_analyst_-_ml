@@ -1,0 +1,64 @@
+/* Main App Background Overlay */
+[data-testid="stAppViewContainer"] {
+    background: transparent;
+}
+
+/* Glassmorphism Containers */
+section.main .block-container {
+    background-color: rgba(14, 17, 23, 0.7);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-top: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Typography */
+h1, h2, h3 {
+    color: #00D2FF !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700 !important;
+    letter-spacing: -0.5px;
+}
+
+/* Sidebar Styling */
+[data-testid="stSidebar"] {
+    background-color: rgba(10, 12, 16, 0.95);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Styled Result Cards */
+.result-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-left: 5px solid #00D2FF;
+    margin: 1rem 0;
+}
+
+/* Metric Colors */
+[data-testid="stMetricValue"] {
+    color: #00D2FF !important;
+}
+
+/* Pulse Animation for important buttons */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(0, 210, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 210, 255, 0); }
+}
+
+.stButton>button[kind="primary"] {
+    background: linear-gradient(45deg, #00D2FF 0%, #3a7bd5 100%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+/* Dataframe styling */
+[data-testid="stDataFrame"] {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border-radius: 10px;
+}
