@@ -1,8 +1,8 @@
-# Final compatible stack for Streamlit Cloud (Python 3.11)
-numpy>=1.23.2,<1.26.0
-pandas>=2.0.0,<2.2.0
-scipy>=1.10.1
-matplotlib>=3.7.1
+# Legacy compatibility stack for PandasAI + PyCaret
+numpy==1.23.5
+pandas==1.5.3
+scipy==1.10.1
+matplotlib==3.7.1
 
 # App Framework
 streamlit==1.30.0
@@ -11,8 +11,10 @@ uvicorn
 python-dotenv
 
 # ML & Analysis
+# ydata-profiling 4.6.4 is the last stable for this stack
 ydata-profiling==4.6.4
 pycaret==3.3.0
+# shap must be >=0.44.0 for pycaret 3.3.0
 shap>=0.45.1
 numba>=0.56.0,<0.59.0
 
@@ -20,5 +22,5 @@ numba>=0.56.0,<0.59.0
 google-generativeai
 pandasai==2.0.0
 
-# Security
-bcrypt
+# Security (pinned for stability)
+bcrypt==4.1.2
